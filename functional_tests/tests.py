@@ -1,10 +1,10 @@
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import unittest
 import time
 
-class NewVistorTest(LiveServerTestCase):
+class NewVistorTest(StaticLiveServerCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
